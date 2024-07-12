@@ -2,16 +2,16 @@ def drawHor(size):
     for i in range(size):
         print(" ---", end="")
 
-def drawVert(size):
+def drawVert(size, content):
     for j in range(size):
-        print("|", end="   ")
+        print("|", end=content)
     print("|", end="")
 
 def drawBoard(size):
     for k in range(size):
         drawHor(size)
         print()
-        drawVert(size)
+        drawVert(size, " 0 ")
         print()
     drawHor(size)
 
